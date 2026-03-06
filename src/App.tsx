@@ -471,7 +471,7 @@ const Footer = () => {
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans selection:bg-neon-violet/30">
+    <div className="min-h-screen font-sans selection:bg-[#9D00FF]/30">
       <Navbar />
       <Hero />
       <Portfolio />
