@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@700;900&display=swap');
+
+@theme {
+  --color-charcoal: #1A1A1A;
+  --color-royal-purple: #301934;
+  --color-neon-violet: #9D00FF;
+  --color-electric-lilac: #BF77FF;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-charcoal text-white selection:bg-neon-violet/30;
+  }
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+.glass-purple {
+  @apply bg-royal-purple/20 backdrop-blur-xl border border-white/10;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(157, 0, 255, 0.5);
+}
+
+.purple-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(48, 25, 52, 0.8);
+}
